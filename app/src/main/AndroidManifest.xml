@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="mx.com.coffeebean_lab.DeliverySwift" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.change_network_state" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="DeliverySwift"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyBVi8guh5NAAiC1Q5MaHf1CEJPOVKpwhSA" />
+
+        <activity
+            android:name="mx.com.coffeebean_lab.DeliverySwift.login"
+            android:label="DeliverySwift" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="mx.com.coffeebean_lab.DeliverySwift.Register"
+            android:label="Info" >
+        </activity>
+        <activity
+            android:name="mx.com.coffeebean_lab.DeliverySwift.fotoperfil"
+            android:label="Fotografia de tu amigo" >
+        </activity>
+        <activity
+            android:name="mx.com.coffeebean_lab.DeliverySwift.buscaamigos"
+            android:label="Info" >
+        </activity>
+        <activity
+            android:name="mx.com.coffeebean_lab.DeliverySwift.Pedidos"
+            android:label="@string/title_activity_pedidos" >
+        </activity>
+    </application>
+
+</manifest>

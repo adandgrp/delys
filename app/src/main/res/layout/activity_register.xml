@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="20dip"
+    android:orientation="vertical"
+    android:background="@drawable/huella2"
+    android:weightSum="1">
+
+
+    <ImageView
+        android:layout_width="134dp"
+        android:layout_height="118dp"
+        android:id="@+id/imagedog"
+        android:background="@drawable/dogcircle"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="181dp"
+        android:layout_height="wrap_content"
+        android:text="Nombre"
+        android:id="@+id/lblnombre" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="29dp"
+        android:background="@drawable/rounded_edittext"
+        android:id="@+id/editText" />
+
+    <TextView
+        android:layout_width="151dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Raza"
+        android:id="@+id/lblraza"
+        android:layout_weight="0.03" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:background="@drawable/rounded_edittext"
+        android:id="@+id/editText2" />
+
+    <RadioGroup
+        android:layout_width="177dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.23"
+        android:id="@+id/genero">
+
+        <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hembra"
+        android:text="hembra" />
+
+        <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/macho"
+        android:text="macho" />
+
+    </RadioGroup>
+
+    <Button
+        android:layout_width="184dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:text="Encontrar amigos"
+        android:layout_gravity="center"
+        android:id="@+id/busca_amigos"
+        android:background="@drawable/rounded_bottom"
+
+        />
+</LinearLayout>
+
+
